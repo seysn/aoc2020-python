@@ -9,7 +9,7 @@ def part1(entries):
 
 
 def part2(entries):
-    for p in itertools.permutations(entries, 3):
+    for p in itertools.combinations(entries, 3):
         if sum(p) == 2020:
             return p[0] * p[1] * p[2]
     return 0
